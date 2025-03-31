@@ -80,6 +80,7 @@ export function getNextSupportedLangPath(currentPath: string, supportedLangs: st
   const langPriority = new Map(
     [defaultLocale, ...moreLocales].map((lang, index) => [lang, index]),
   )
+
   const sortedLangs = [...supportedLangs].sort(
     (a, b) => langPriority.get(a)! - langPriority.get(b)!,
   )

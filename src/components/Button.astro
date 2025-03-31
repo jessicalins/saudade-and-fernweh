@@ -19,6 +19,9 @@ const showLanguageSwitcher = moreLocales.length > 0
 // Check if only the supported language switch list is used
 const useSupportedLangs = isPost || (isTag && supportedLangs.length > 0)
 // Choose a language switch list according to the page type
+console.log('supportedLangs: ', supportedLangs)
+console.log('currentPath: ', currentPath)
+
 const nextUrl = useSupportedLangs
   ? getNextSupportedLangPath(currentPath, supportedLangs) // Switch between supported languages
   : getNextGlobalLangPath(currentPath) // Switch between all languages

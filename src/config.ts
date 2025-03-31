@@ -4,20 +4,20 @@ export const themeConfig: ThemeConfig = {
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   site: {
     // site title
-    title: 'Retypeset',
+    title: 'Saudade & Fernweh',
     // site subtitle
-    subtitle: 'Revive the beauty of typography',
+    subtitle: 'Documenting our adventures around the world 🌎',
     // site description
-    description: 'Retypeset is a static blog theme based on the Astro framework. Inspired by Typography, Retypeset establishes a new visual standard and reimagines the layout of all pages, creating a reading experience reminiscent of paper books, reviving the beauty of typography. Details in every sight, elegance in every space.',
+    description: 'Documenting our adventures around the world 🌎',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
     i18nTitle: true, // true, false
     // author name
-    author: 'radishzz',
+    author: 'Jéssica & Adrian',
     // site url
-    url: 'https://retypeset.radishzz.cc',
+    url: 'https://saudade-and-fernweh.vercel.app/',
     // favicon url
     // recommended formats: svg, png or ico
-    favicon: '/icon/favicon.svg', // or https://example.com/favicon.svg
+    favicon: '/icon/favicon.png', // or https://example.com/favicon.svg
   },
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
@@ -53,14 +53,14 @@ export const themeConfig: ThemeConfig = {
   // GLOBAL SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   global: {
     // default language
-    locale: 'zh', // zh, zh-tw, ja, en, es, ru
+    locale: 'pt', // en, pt, de
     // more languages
     // not fill in the locale code above again
-    moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'], // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
+    moreLocales: ['de', 'en'], // ['en', 'pt', 'de']
     // font styles for post text
     fontStyle: 'sans', // sans, serif
     // date format for posts
-    dateFormat: 'YYYY-MM-DD', // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+    dateFormat: 'DD-MM-YYYY', // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
     // gap between title and subtitle
     titleGap: 2, // 1, 2, 3
   },
@@ -69,12 +69,12 @@ export const themeConfig: ThemeConfig = {
   // COMMENT SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   comment: {
     // enable comment system
-    enabled: true, // true, false
+    enabled: false, // true, false
     // waline comment system
     // https://waline.js.org/en/
     waline: {
       // server url
-      serverURL: 'https://retypeset-comment.radishzz.cc',
+      serverURL: '',
       // emoji url
       emoji: [
         'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji',
@@ -93,15 +93,15 @@ export const themeConfig: ThemeConfig = {
   // SEO SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   seo: {
     // @twitter ID
-    twitterID: '@radishzz_',
+    twitterID: '@cupsofwonder',
     // site verification
     verification: {
       // google search console
       // https://search.google.com/search-console
-      google: 'AUCrz5F1e5qbnmKKDXl2Sf8u6y0kOpEO1wLs6HMMmlM',
+      google: '',
       // bing webmaster tools
       // https://www.bing.com/webmasters
-      bing: '64708CD514011A7965C84DDE1D169F87',
+      bing: '',
       // yandex webmaster
       // https://webmaster.yandex.com
       yandex: '',
@@ -114,7 +114,7 @@ export const themeConfig: ThemeConfig = {
     googleAnalyticsID: '',
     // umami analytics
     // https://cloud.umami.is
-    umamiAnalyticsID: '520af332-bfb7-4e7c-9386-5f273ee3d697',
+    umamiAnalyticsID: '',
     // follow verification
     // https://follow.is/
     follow: {
@@ -135,24 +135,16 @@ export const themeConfig: ThemeConfig = {
     // social links
     links: [
       {
-        name: 'RSS',
-        url: '/rss.xml', // rss.xml, atom.xml
+        name: 'Instagram',
+        url: 'https://instagram.com/cupsofwonder',
       },
       {
-        name: 'GitHub',
-        url: 'https://github.com/radishzzz/astro-theme-retypeset',
+        name: 'Favicon by Freepik',
+        url: 'https://www.flaticon.com/authors/freepik',
       },
-      {
-        name: 'Twitter',
-        url: 'https://x.com/radishzz_',
-      },
-      // {
-      //   name: 'Email',
-      //   url: 'https://example@gmail.com',
-      // }
     ],
     // year of website start
-    startYear: 2024,
+    startYear: 2025,
   },
   // FOOTER SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
@@ -162,9 +154,9 @@ export const themeConfig: ThemeConfig = {
     // docs: https://docs.astro.build/en/guides/prefetch/#prefetch-strategies
     linkPrefetch: 'viewport', // hover, tap, viewport, load
     // comment server url
-    commentURL: 'https://retypeset-comment.radishzz.cc',
+    commentURL: '',
     // image hosting url
-    imageHostURL: 'https://image.radishzz.cc',
+    imageHostURL: '',
     // custom google analytics js
     // for users who route analytics javascript to a customized domain
     // See https://gist.github.com/xiaopc/0602f06ca465d76bd9efd3dda9393738
@@ -172,7 +164,7 @@ export const themeConfig: ThemeConfig = {
     // custom umami analytics js
     // for users who deploy umami on their own, or route analytics javascript to a customized domain
     // see https://github.com/umami-software/umami/discussions/1026
-    customUmamiAnalyticsJS: 'https://js.radishzz.cc/jquery.min.js',
+    customUmamiAnalyticsJS: '',
   },
   // PRELOAD SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 }
