@@ -29,12 +29,28 @@ const walineConfigJson = JSON.stringify({
   search,
   imageUploader,
 })
+
+const walineLocales = {
+  'en': {
+    nick: 'Name',
+    nickError: 'Name should have at least 3 letters.',
+  },
+  'pt-BR': {
+    nick: 'Nome',
+    nickError: 'O nome deve ter pelo menos 3 letras.',
+  },
+  'de': {
+    nick: 'Name',
+    nickError: 'Der Name muss mindestens 3 Zeichen lang sein.',
+  }
+}
 ---
 
 <div
   id="waline"
   class="mt-16"
   data-config={walineConfigJson}
+  data-locales={JSON.stringify(walineLocales)}
 >
 </div>
 
@@ -46,16 +62,21 @@ import '@waline/client/style'
 function initWaline() {
   const walineEl = document.getElementById('waline')
   const walineConfig = JSON.parse(walineEl?.dataset.config || '{}')
+  const walineLang = walineConfig.lang
+  const locales = JSON.parse(walineEl?.dataset.locales || '{}')
+  const locale = locales[walineLang] || locales['en'];
+
 
   init({
     el: '#waline',
     path: window.location.pathname.replace(/^\/([a-z]{2}(-[a-z]{2})?)\//, '/'),
     dark: 'html.dark',
-    requiredMeta: ['nick', 'mail'],
+    requiredMeta: ['nick'],
     highlighter: false,
     texRenderer: false,
     noCopyright: true,
     reaction: [],
+    locale, // passing custom locale, refs https://waline.js.org/en/cookbook/customize/locale.html
     ...walineConfig,
   })
 }
