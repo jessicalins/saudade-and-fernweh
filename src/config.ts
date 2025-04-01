@@ -69,12 +69,12 @@ export const themeConfig: ThemeConfig = {
   // COMMENT SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   comment: {
     // enable comment system
-    enabled: false, // true, false
+    enabled: true, // true, false
     // waline comment system
     // https://waline.js.org/en/
     waline: {
       // server url
-      serverURL: '',
+      serverURL: 'https://saudade-and-fernweh-waline.vercel.app/',
       // emoji url
       emoji: [
         'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji',
@@ -154,7 +154,7 @@ export const themeConfig: ThemeConfig = {
     // docs: https://docs.astro.build/en/guides/prefetch/#prefetch-strategies
     linkPrefetch: 'viewport', // hover, tap, viewport, load
     // comment server url
-    commentURL: '',
+    commentURL: 'https://saudade-and-fernweh-waline.vercel.app/',
     // image hosting url
     imageHostURL: '',
     // custom google analytics js
