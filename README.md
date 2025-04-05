@@ -4,7 +4,7 @@ Documenting our adventures around the world 🌎
 
 ## Deployment
 
-https://saudade-and-fernweh.vercel.app/en/
+[https://saudade-and-fernweh.vercel.app/en/](https://www.saudade-and-fernweh.com/)
 
 ## Theme
 
